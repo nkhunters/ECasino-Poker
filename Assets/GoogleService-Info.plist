@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>633437289397-ccnn1a056j8ldkinhifji13aa1fnmen8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.633437289397-ccnn1a056j8ldkinhifji13aa1fnmen8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCRYNU0G5ll6fAClSRGwg3tI6CHs7eCPO8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>633437289397</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.blinklabs.ECasino</string>
+	<key>PROJECT_ID</key>
+	<string>ecasino-6b290</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ecasino-6b290.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:633437289397:ios:b7ae0a447484522a</string>
+	<key>DATABASE_URL</key>
+	<string>https://ecasino-6b290.firebaseio.com</string>
+</dict>
+</plist>

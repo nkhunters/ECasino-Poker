@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://ecasino-6b290.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">633437289397</string>
+  <string name="google_storage_bucket" translatable="false">ecasino-6b290.appspot.com</string>
+  <string name="project_id" translatable="false">ecasino-6b290</string>
+  <string name="google_api_key" translatable="false">AIzaSyBx3TFygh2Z_WP_uCObUVfJ8m8_WLaf2q8</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBx3TFygh2Z_WP_uCObUVfJ8m8_WLaf2q8</string>
+  <string name="google_app_id" translatable="false">1:633437289397:android:b7ae0a447484522a</string>
+  <string name="default_web_client_id" translatable="false">633437289397-39p2s6k4k6g8on3gojb2mg39vt162hdu.apps.googleusercontent.com</string>
+</resources>

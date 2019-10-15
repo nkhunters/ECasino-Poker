@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "633437289397",
+    "firebase_url": "https://ecasino-6b290.firebaseio.com",
+    "project_id": "ecasino-6b290",
+    "storage_bucket": "ecasino-6b290.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633437289397:android:b7ae0a447484522a",
+        "android_client_info": {
+          "package_name": "com.blinklabs.ECasino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633437289397-39p2s6k4k6g8on3gojb2mg39vt162hdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx3TFygh2Z_WP_uCObUVfJ8m8_WLaf2q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633437289397-39p2s6k4k6g8on3gojb2mg39vt162hdu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "633437289397-ccnn1a056j8ldkinhifji13aa1fnmen8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blinklabs.ECasino"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
