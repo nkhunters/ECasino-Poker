@@ -10,7 +10,8 @@ public class _GameManager : MonoBehaviour
     List<Player> players;
     List<string> PlayerLog;
     Cards cards;
-   public int currentPlayer;
+    public int currentPlayer;
+    public Text Winner;
     Sprite sprite;
     public int playerCount;
     GameObject go;
@@ -18,7 +19,7 @@ public class _GameManager : MonoBehaviour
     Vector3 position;
     Vector3 DealerPosition;
     Vector3 CommPos;
-  public  GameObject CardPrefab;
+    public  GameObject CardPrefab;
     public GameObject DealerPrefab;
     public float speed;
     float step;
@@ -35,6 +36,7 @@ public class _GameManager : MonoBehaviour
     public int RaiseValue;
     public int PotValue;
     public Text Money;
+    public Image TimeBar;
     public Slider Slider;
     private bool playerChecked;
     public GameObject checkBtn;
@@ -86,7 +88,7 @@ public class _GameManager : MonoBehaviour
         players = new List<Player>();
         PlayerLog = new List<string>();
         sprite = GetComponent<Sprite>();
-        Money = FindObjectOfType<Text>();
+        TimeBar = FindObjectOfType<Image>();
         turnIsComplete = false;
         timeLeft = turnTime;
         BigBlindChips = 2 * SmallBlindChips;
@@ -112,16 +114,24 @@ public class _GameManager : MonoBehaviour
         SetPlayPositions();
     }
 
-  /*  private void Update()
+    private void Update()
     {
-        timeLeft -= Time.deltaTime;
-        
-        if(timeLeft < 0)
+        if (timeLeft > 0)
         {
-            currentPlayer++;
-            Play(currentPlayer);
+            timeLeft -= Time.deltaTime;
+            TimeBar.fillAmount = timeLeft / turnTime;
         }
-    }*/
+
+        else
+        {
+            Fold();
+             currentPlayer++;
+             Play(currentPlayer);
+            timeLeft = turnTime;
+
+        }
+
+    }
 
 
     void PrintStatus()
@@ -263,6 +273,7 @@ public class _GameManager : MonoBehaviour
         {
             current_player.Chips += PotValue;
             Debug.Log("Player " + current_player.playerId + " WON " + current_player.Chips);
+            Winner.text = "Player " + current_player.playerId + " WON " + current_player.Chips;
         }
 
     }
@@ -1058,8 +1069,13 @@ public class _GameManager : MonoBehaviour
 
         }
 
+        
+        PlayerLog.Add("Player " + winner.playerId + " won " + PotValue + " chips with " + strRank);
         Debug.Log("Player " + winner.playerId + " won " + PotValue + " chips with " + strRank);
+        Winner.text = "Winner " + winner.playerId + " won " + PotValue + " chips with " + strRank;
     }
+
+  
 }
 
 
